@@ -23,7 +23,7 @@ object AppModule {
     fun providesBookAPI() : BookAPI {
         return Retrofit
             .Builder()
-            .baseUrl("https://portfolio-namia.000webhostapp.com")
+            .baseUrl("https://portfolio-namia.000webhostapp.com/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
             .create(BookAPI::class.java)
