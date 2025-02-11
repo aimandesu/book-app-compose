@@ -82,7 +82,7 @@ class BookViewModel @Inject constructor(
             _allBooksState.update {
                 it.copy(isLoading = true)
             }
-            val books = bookRepository.getAllBooks() //booksMockUpData //
+            val books =booksMockUpData //  bookRepository.getAllBooks() // //
             if (books.isNotEmpty()) {
                 _allBooksState.update { it.copy(isLoading = false, booksList = books) }
             }
