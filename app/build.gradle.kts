@@ -11,11 +11,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.bookapp"
+    namespace = "com.redblazer.bookapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.bookapp"
+        applicationId = "com.redblazer.bookapp"
         minSdk = 30
         targetSdk = 34
         versionCode = 1
